@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 08 22:45:14 IST 2024</td>
+<td>Started on:</td><td>Mon Mar 11 14:17:41 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>158 seconds (158925 ms)</td>
+<tr><td>Total time:</td><td>227 seconds (227801 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,145 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sqa.qa.testcases.AccountPageTest.Verify_Deposit_With_InValideAmmount()'><b>Verify_Deposit_With_InValideAmmount</b><br>Test class: com.sqa.qa.testcases.AccountPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.sqa.qa.pages.AccountPage.InValidDeposit(AccountPage.java:179)
+	at com.sqa.qa.testcases.AccountPageTest.Verify_Deposit_With_InValideAmmount(AccountPageTest.java:44)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1436347886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1436347886'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.sqa.qa.pages.AccountPage.InValidDeposit(AccountPage.java:179)
+	at com.sqa.qa.testcases.AccountPageTest.Verify_Deposit_With_InValideAmmount(AccountPageTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.sqa.qa.testcases.AccountPageTest@11c9af63</td></tr>
+<tr>
+<td title='com.sqa.qa.testcases.AccountPageTest.Verify_Withdraw_With_InSufficient()'><b>Verify_Withdraw_With_InSufficient</b><br>Test class: com.sqa.qa.testcases.AccountPageTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=122.0.6261.112)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-1J07LNA&apos;, ip: &apos;192.168.57.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Pranjal\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ecb84fed0914d6b0ada3832af443a05
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:435)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.clear(Unknown Source)
+	at com.sqa.qa.pages.AccountPage.Withdraw(AccountPage.java:102)
+	at com.sqa.qa.pages.AccountPage.ValidWithdraw(AccountPage.java:192)
+	at com.sqa.qa.testcases.AccountPageTest.Verify_Withdraw_With_InSufficient(AccountPageTest.java:61)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace353841915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace353841915'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=122.0.6261.112)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-1J07LNA&apos;, ip: &apos;192.168.57.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Pranjal\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ecb84fed0914d6b0ada3832af443a05
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:435)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.clear(Unknown Source)
+	at com.sqa.qa.pages.AccountPage.Withdraw(AccountPage.java:102)
+	at com.sqa.qa.pages.AccountPage.ValidWithdraw(AccountPage.java:192)
+	at com.sqa.qa.testcases.AccountPageTest.Verify_Withdraw_With_InSufficient(AccountPageTest.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.sqa.qa.testcases.AccountPageTest@11c9af63</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,58 +216,43 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.sqa.qa.testcases.AddCustomerTest.AddCustomer_Exist()'><b>AddCustomer_Exist</b><br>Test class: com.sqa.qa.testcases.AddCustomerTest</td>
 <td></td>
-<td>4</td>
-<td>com.sqa.qa.testcases.AddCustomerTest@2a266d09</td></tr>
+<td>3</td>
+<td>com.sqa.qa.testcases.AddCustomerTest@50caa560</td></tr>
 <tr>
 <td title='com.sqa.qa.testcases.AddCustomerTest.AddCustomer_NotExist()'><b>AddCustomer_NotExist</b><br>Test class: com.sqa.qa.testcases.AddCustomerTest</td>
 <td></td>
-<td>2</td>
-<td>com.sqa.qa.testcases.AddCustomerTest@2a266d09</td></tr>
+<td>3</td>
+<td>com.sqa.qa.testcases.AddCustomerTest@50caa560</td></tr>
 <tr>
 <td title='com.sqa.qa.testcases.CustomersPageTest.DeleteCustomerEntry()'><b>DeleteCustomerEntry</b><br>Test class: com.sqa.qa.testcases.CustomersPageTest</td>
 <td></td>
-<td>2</td>
-<td>com.sqa.qa.testcases.CustomersPageTest@50caa560</td></tr>
+<td>1</td>
+<td>com.sqa.qa.testcases.CustomersPageTest@568ff82</td></tr>
 <tr>
 <td title='com.sqa.qa.testcases.OpenAccountPageTest.OpenAccount()'><b>OpenAccount</b><br>Test class: com.sqa.qa.testcases.OpenAccountPageTest</td>
 <td></td>
-<td>2</td>
-<td>com.sqa.qa.testcases.OpenAccountPageTest@11c9af63</td></tr>
-<tr>
-<td title='com.sqa.qa.testcases.AccountPageTest.Verify_Deposit_With_InValideAmmount()'><b>Verify_Deposit_With_InValideAmmount</b><br>Test class: com.sqa.qa.testcases.AccountPageTest</td>
-<td></td>
-<td>6</td>
-<td>com.sqa.qa.testcases.AccountPageTest@757acd7b</td></tr>
+<td>3</td>
+<td>com.sqa.qa.testcases.OpenAccountPageTest@45ca843</td></tr>
 <tr>
 <td title='com.sqa.qa.testcases.TransactionsPageTest.Verify_Deposit_With_ValideAmmount()'><b>Verify_Deposit_With_ValideAmmount</b><br>Test class: com.sqa.qa.testcases.TransactionsPageTest</td>
 <td></td>
-<td>2</td>
-<td>com.sqa.qa.testcases.TransactionsPageTest@f2ff811</td></tr>
+<td>3</td>
+<td>com.sqa.qa.testcases.TransactionsPageTest@65b3f4a4</td></tr>
 <tr>
 <td title='com.sqa.qa.testcases.AccountPageTest.Verify_Deposit_With_ValideAmmount()'><b>Verify_Deposit_With_ValideAmmount</b><br>Test class: com.sqa.qa.testcases.AccountPageTest</td>
 <td></td>
 <td>2</td>
-<td>com.sqa.qa.testcases.AccountPageTest@757acd7b</td></tr>
-<tr>
-<td title='com.sqa.qa.testcases.AccountPageTest.Verify_Withdraw_With_InSufficient()'><b>Verify_Withdraw_With_InSufficient</b><br>Test class: com.sqa.qa.testcases.AccountPageTest</td>
-<td></td>
-<td>13</td>
-<td>com.sqa.qa.testcases.AccountPageTest@757acd7b</td></tr>
-<tr>
-<td title='com.sqa.qa.testcases.AccountPageTest.Verify_Withdraw_With_InValideAmmount()'><b>Verify_Withdraw_With_InValideAmmount</b><br>Test class: com.sqa.qa.testcases.AccountPageTest</td>
-<td></td>
-<td>11</td>
-<td>com.sqa.qa.testcases.AccountPageTest@757acd7b</td></tr>
+<td>com.sqa.qa.testcases.AccountPageTest@11c9af63</td></tr>
 <tr>
 <td title='com.sqa.qa.testcases.AccountPageTest.Verify_Withdraw_With_ValideAmmount()'><b>Verify_Withdraw_With_ValideAmmount</b><br>Test class: com.sqa.qa.testcases.AccountPageTest</td>
 <td></td>
 <td>13</td>
-<td>com.sqa.qa.testcases.AccountPageTest@757acd7b</td></tr>
+<td>com.sqa.qa.testcases.AccountPageTest@11c9af63</td></tr>
 <tr>
 <td title='com.sqa.qa.testcases.CustomerLoginTest.customerlogin()'><b>customerlogin</b><br>Test class: com.sqa.qa.testcases.CustomerLoginTest</td>
 <td></td>
-<td>2</td>
-<td>com.sqa.qa.testcases.CustomerLoginTest@568ff82</td></tr>
+<td>6</td>
+<td>com.sqa.qa.testcases.CustomerLoginTest@f2ff811</td></tr>
 </table><p>
 </body>
 </html>

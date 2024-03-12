@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sqa.qa.testcases.AccountPageTest" class="method navigator-link" hash-for-method="Verify_Deposit_With_InValideAmmount">Verify_Deposit_With_InValideAmmount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sqa.qa.testcases.AccountPageTest" class="method navigator-link" hash-for-method="Verify_Withdraw_With_InSufficient">Verify_Withdraw_With_InSufficient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,27 +141,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.sqa.qa.testcases.AccountPageTest" class="method navigator-link" hash-for-method="Verify_Deposit_With_InValideAmmount">Verify_Deposit_With_InValideAmmount</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.sqa.qa.testcases.AccountPageTest" class="method navigator-link" hash-for-method="Verify_Deposit_With_ValideAmmount">Verify_Deposit_With_ValideAmmount</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.sqa.qa.testcases.TransactionsPageTest" class="method navigator-link" hash-for-method="Verify_Deposit_With_ValideAmmount">Verify_Deposit_With_ValideAmmount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.sqa.qa.testcases.AccountPageTest" class="method navigator-link" hash-for-method="Verify_Withdraw_With_InSufficient">Verify_Withdraw_With_InSufficient</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.sqa.qa.testcases.AccountPageTest" class="method navigator-link" hash-for-method="Verify_Withdraw_With_InValideAmmount">Verify_Withdraw_With_InValideAmmount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.sqa.qa.testcases.AccountPageTest" class="method navigator-link" hash-for-method="Verify_Deposit_With_ValideAmmount">Verify_Deposit_With_ValideAmmount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -167,6 +171,59 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sqa.qa.testcases.AccountPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Deposit_With_InValideAmmount">
+                  </a> <!-- Verify_Deposit_With_InValideAmmount -->
+                  <span class="method-name">Verify_Deposit_With_InValideAmmount</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.sqa.qa.pages.AccountPage.InValidDeposit(AccountPage.java:179)
+	at com.sqa.qa.testcases.AccountPageTest.Verify_Deposit_With_InValideAmmount(AccountPageTest.java:44)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Withdraw_With_InSufficient">
+                  </a> <!-- Verify_Withdraw_With_InSufficient -->
+                  <span class="method-name">Verify_Withdraw_With_InSufficient</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=122.0.6261.112)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-1J07LNA&apos;, ip: &apos;192.168.57.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Pranjal\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ecb84fed0914d6b0ada3832af443a05
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:435)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.clear(Unknown Source)
+	at com.sqa.qa.pages.AccountPage.Withdraw(AccountPage.java:102)
+	at com.sqa.qa.pages.AccountPage.ValidWithdraw(AccountPage.java:192)
+	at com.sqa.qa.testcases.AccountPageTest.Verify_Withdraw_With_InSufficient(AccountPageTest.java:61)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -235,30 +292,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_Deposit_With_InValideAmmount">
-                  </a> <!-- Verify_Deposit_With_InValideAmmount -->
-                  <span class="method-name">Verify_Deposit_With_InValideAmmount</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="Verify_Deposit_With_ValideAmmount">
                   </a> <!-- Verify_Deposit_With_ValideAmmount -->
                   <span class="method-name">Verify_Deposit_With_ValideAmmount</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_Withdraw_With_InSufficient">
-                  </a> <!-- Verify_Withdraw_With_InSufficient -->
-                  <span class="method-name">Verify_Withdraw_With_InSufficient</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_Withdraw_With_InValideAmmount">
-                  </a> <!-- Verify_Withdraw_With_InValideAmmount -->
-                  <span class="method-name">Verify_Withdraw_With_InValideAmmount</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -352,56 +388,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Verify_Withdraw_With_InSufficient')
+data.setCell(0, 1, 'Verify_Withdraw_With_ValideAmmount')
 data.setCell(0, 2, 'com.sqa.qa.testcases.AccountPageTest')
-data.setCell(0, 3, 13684);
+data.setCell(0, 3, 13321);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Verify_Withdraw_With_ValideAmmount')
-data.setCell(1, 2, 'com.sqa.qa.testcases.AccountPageTest')
-data.setCell(1, 3, 13109);
+data.setCell(1, 1, 'customerlogin')
+data.setCell(1, 2, 'com.sqa.qa.testcases.CustomerLoginTest')
+data.setCell(1, 3, 6657);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Verify_Withdraw_With_InValideAmmount')
-data.setCell(2, 2, 'com.sqa.qa.testcases.AccountPageTest')
-data.setCell(2, 3, 11188);
+data.setCell(2, 1, 'AddCustomer_Exist')
+data.setCell(2, 2, 'com.sqa.qa.testcases.AddCustomerTest')
+data.setCell(2, 3, 3724);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Verify_Deposit_With_InValideAmmount')
+data.setCell(3, 1, 'Verify_Withdraw_With_InSufficient')
 data.setCell(3, 2, 'com.sqa.qa.testcases.AccountPageTest')
-data.setCell(3, 3, 6587);
+data.setCell(3, 3, 3600);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'AddCustomer_Exist')
-data.setCell(4, 2, 'com.sqa.qa.testcases.AddCustomerTest')
-data.setCell(4, 3, 4974);
+data.setCell(4, 1, 'OpenAccount')
+data.setCell(4, 2, 'com.sqa.qa.testcases.OpenAccountPageTest')
+data.setCell(4, 3, 3163);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'DeleteCustomerEntry')
-data.setCell(5, 2, 'com.sqa.qa.testcases.CustomersPageTest')
-data.setCell(5, 3, 2866);
+data.setCell(5, 1, 'Verify_Deposit_With_ValideAmmount')
+data.setCell(5, 2, 'com.sqa.qa.testcases.TransactionsPageTest')
+data.setCell(5, 3, 3097);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'OpenAccount')
-data.setCell(6, 2, 'com.sqa.qa.testcases.OpenAccountPageTest')
-data.setCell(6, 3, 2716);
+data.setCell(6, 1, 'AddCustomer_NotExist')
+data.setCell(6, 2, 'com.sqa.qa.testcases.AddCustomerTest')
+data.setCell(6, 3, 3030);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'AddCustomer_NotExist')
-data.setCell(7, 2, 'com.sqa.qa.testcases.AddCustomerTest')
-data.setCell(7, 3, 2679);
+data.setCell(7, 1, 'Verify_Deposit_With_ValideAmmount')
+data.setCell(7, 2, 'com.sqa.qa.testcases.AccountPageTest')
+data.setCell(7, 3, 2982);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Verify_Deposit_With_ValideAmmount')
+data.setCell(8, 1, 'Verify_Deposit_With_InValideAmmount')
 data.setCell(8, 2, 'com.sqa.qa.testcases.AccountPageTest')
-data.setCell(8, 3, 2536);
+data.setCell(8, 3, 1603);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'customerlogin')
-data.setCell(9, 2, 'com.sqa.qa.testcases.CustomerLoginTest')
-data.setCell(9, 3, 2288);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'Verify_Deposit_With_ValideAmmount')
-data.setCell(10, 2, 'com.sqa.qa.testcases.TransactionsPageTest')
-data.setCell(10, 3, 2237);
+data.setCell(9, 1, 'DeleteCustomerEntry')
+data.setCell(9, 2, 'com.sqa.qa.testcases.CustomersPageTest')
+data.setCell(9, 3, 1280);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -434,152 +466,144 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Verify_Deposit_With_ValideAmmount</span>
-                <span class="method-start">23086 ms</span>
+                <span class="method-start">68182 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25326 ms</span>
+                <span class="method-start">71284 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sqa.qa.testcases.CustomerLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">25828 ms</span>
+                <span class="method-start">72983 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">customerlogin</span>
-                <span class="method-start">31917 ms</span>
+                <span class="method-start">99435 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34207 ms</span>
+                <span class="method-start">106094 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sqa.qa.testcases.CustomersPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">34567 ms</span>
+                <span class="method-start">108099 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DeleteCustomerEntry</span>
-                <span class="method-start">39328 ms</span>
+                <span class="method-start">122352 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">42196 ms</span>
+                <span class="method-start">123634 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sqa.qa.testcases.AddCustomerTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">42553 ms</span>
+                <span class="method-start">124515 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AddCustomer_NotExist</span>
-                <span class="method-start">48465 ms</span>
+                <span class="method-start">134655 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">51154 ms</span>
+                <span class="method-start">137688 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sqa.qa.testcases.OpenAccountPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">51558 ms</span>
+                <span class="method-start">138113 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">OpenAccount</span>
-                <span class="method-start">56865 ms</span>
+                <span class="method-start">147141 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">59584 ms</span>
+                <span class="method-start">150307 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sqa.qa.testcases.AccountPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">59865 ms</span>
+                <span class="method-start">151104 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Verify_Deposit_With_ValideAmmount</span>
-                <span class="method-start">66823 ms</span>
+                <span class="method-start">163743 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">69361 ms</span>
+                <span class="method-start">166726 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sqa.qa.testcases.AddCustomerTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">69656 ms</span>
+                <span class="method-start">167151 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AddCustomer_Exist</span>
-                <span class="method-start">77821 ms</span>
+                <span class="method-start">174033 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">82796 ms</span>
+                <span class="method-start">177760 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sqa.qa.testcases.AccountPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">83234 ms</span>
+                <span class="method-start">178099 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Verify_Deposit_With_InValideAmmount</span>
-                <span class="method-start">91467 ms</span>
+                <span class="method-start">186682 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">98056 ms</span>
+                <span class="method-start">188288 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">98393 ms</span>
+                <span class="method-start">188705 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Verify_Withdraw_With_ValideAmmount</span>
-                <span class="method-start">105824 ms</span>
+                <span class="method-start">197685 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">118934 ms</span>
+                <span class="method-start">211008 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">119270 ms</span>
+                <span class="method-start">211364 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Verify_Withdraw_With_InValideAmmount</span>
-                <span class="method-start">125948 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">137138 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">137495 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Verify_Withdraw_With_InSufficient</span>
-                <span class="method-start">144855 ms</span>
+                <span class="method-start">223471 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">158541 ms</span>
+                <span class="method-start">227074 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

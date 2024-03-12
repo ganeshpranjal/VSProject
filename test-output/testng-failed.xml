@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.sqa.qa.testcases.AddCustomerTest">
+      <class name="com.sqa.qa.testcases.AccountPageTest">
         <methods>
-          <include name="setup"/>
-          <include name="verifyManagerLogin"/>
+          <include name="setUp"/>
+          <include name="Verify_Withdraw_With_InSufficient"/>
+          <include name="Verify_Deposit_With_InValideAmmount"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.sqa.qa.testcases.AddCustomerTest -->
+      </class> <!-- com.sqa.qa.testcases.AccountPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
